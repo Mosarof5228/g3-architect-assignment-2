@@ -318,6 +318,11 @@ font-size: 45px;
   .first-child,.third-child{
     grid-template-columns: repeat(1,1fr);
   }
+  .extra-button-container{
+    margin-top: 50%;
+    margin-top: 50px;
+    position: relative;
+  }
 
 
 }
