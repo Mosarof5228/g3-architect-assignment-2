@@ -189,7 +189,7 @@ font-size: 45px;
 
 /* personal-section-styles */
 .personal-section{
-    margin-bottom: 2;
+    margin-bottom: 2rem;
 }
 .parent-of-three-child{
     display: flex;
@@ -222,10 +222,6 @@ font-size: 45px;
     text-align: center;
 }
 
-
-.first-card-flex{
-    display: flex;
-}
 /* sponspors section styles */
 .sponspor-section-container{
     margin-bottom:9.3rem ;
