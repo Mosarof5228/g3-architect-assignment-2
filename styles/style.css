@@ -185,6 +185,47 @@ font-size: 45px;
     font-size:1.1rem;
     font-weight: 300;
 }
+
+
+/* personal-section-styles */
+.personal-section{
+    margin-bottom: 2;
+}
+.parent-of-three-child{
+    display: flex;
+    gap:10px;
+}
+.personal-section-title{
+    font-size: 2.5rem;
+    padding:30px;
+    text-align: center;
+    background-color: pink;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+.first-child, .third-child{
+    display: grid;grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+.card-img-container{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding:15px;
+
+}
+
+.card-img-container>img{
+    height:100%;
+    width:100%;
+    
+}
+.second-child{
+    text-align: center;
+}
+
+
+.first-card-flex{
+    display: flex;
+}
 /* sponspors section styles */
 .sponspor-section-container{
     margin-bottom:9.3rem ;
@@ -261,4 +302,9 @@ font-size: 45px;
     flex-direction: column;
    align-items: center;
   }
+  .first-child,.third-child{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+
 }
