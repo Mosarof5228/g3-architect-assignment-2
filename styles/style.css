@@ -142,9 +142,26 @@ ul>li{
     object-fit:cover;
     object-position: top;
     padding-bottom: 20px;
-
-
-
+}
+/* extra button styles */
+.btn-secondary{
+    background-color:#FF900E;
+    border:none;
+    padding:2rem;
+    color:white;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    
+}
+.extra-button-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:-30px;
+    left:0px;
+}
+.position-container{
+    position: relative;
 }
 
 /* facts or small card section styles */
