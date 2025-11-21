@@ -1,8 +1,69 @@
-*{
-    padding:0px;
-    margin:0px;
-    box-sizing: border-box;
-}
+
+* {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            padding: 20px 30px;
+            background-color: chocolate;
+            max-width: 95%;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+        
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+            font-size: 22px;
+        }
+
+        nav a:hover {
+            padding: 10px 15px;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            border: 1px solid pink;
+        }
+
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            /* max-width: 100%; */
+            width: 50%;
+
+
+        }
+
+        .form-container-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            /* width: 50%; */
+        }
+
+        .form-section input {
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 22px;
+
+        }
+
+        .form-section input[type="submit"] {
+            background-color: plum;
+            border: none;
+            width: 25%;
+            border-radius: 5px;
+        }
+
 .container{
     width: 100%;
     max-width: 1240px;
