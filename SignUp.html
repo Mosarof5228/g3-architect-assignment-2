@@ -14,18 +14,23 @@
     <div class="main">
         <h1>Please Registration Here</h1>
 
-        <form onsubmit="handleSubmit(event)">
+        <form onsubmit="handleSignUp(event)">
             <label for="first">Username:</label>
-            <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+            <input type="text" id="name" name="name" placeholder="Enter your Username" required>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter your Password" required>
 
-            <input type="submit" value="Submit">
+          <div class="wrap">
+                <button type="submit">
+                    Submit
+                </button>
+            </div>
         </form>
 
-        <p>Not registered?
-            <a href="#" style="text-decoration: none;">Create an account</a>
+        <p>Already Have an account?
+           <button> <a class="btn" href="/login.html" style="text-decoration: none;">Please Login</a></button>
         </p>
     </div>
 </div>

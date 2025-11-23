@@ -1,11 +1,28 @@
-function handleSubmit(event) {
-    event.preventDefault(); 
 
-    const username = document.getElementById("first").value;
-    const password = document.getElementById("password").value;
 
-    console.log("Username:", username);
-    console.log("Password:", password);
+const handleSignUp = (event) => {
+  event.preventDefault();
+  
+  const formData = new FormData(event.target);
+  const name = formData.get("name");
+  const email = formData.get("email");
+  const password = formData.get("password");
+    
+  console.log(name, email, password);
+  alert("Successfully SignUp")
+};
 
-    alert("Form submitted successfully");
-}
+
+const handleLogin= (event) => {
+  event.preventDefault();
+  
+  const formData = new FormData(event.target);
+  const name = formData.get("name");
+  const password = formData.get("password");
+    
+  console.log(name,password);
+  alert("Successfully SignUp")
+};
+
+
+
