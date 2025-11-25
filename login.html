@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Login Form</title>
     <link rel="stylesheet" href="/styles/login.css">
 </head>
 
 <body>
-<div class="button-collection">
-    <div class="button-wrapper">
+    <div class="button-collection">
+        <div class="button-wrapper">
+            <!-- You can add more buttons here if needed -->
+        </div>
 
+        <a href="/index.html" class="btn">Go to Home Page</a>
+
+        <div class="main">
+            <h1>Please Login Here!</h1>
+
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <label for="name">Username:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+
+                <div class="wrap">
+                    <button type="submit">Login Now</button>
+                </div>
+            </form>
+
+            <p>Not registered?
+                <a href="/SignUp.html" class="btn" style="text-decoration: none;color:black">Create an account</a>
+            </p>
+        </div>
     </div>
-     <button class="btn">
-       <a href="/index.html"> Go to Home Page</a>
-    </button>
-    <div class="main">
-        <h1>Please Login Here!</h1>
-       
 
-        <form onsubmit="handleLogin(event)" >
-            <label for="first">
-                Username:
-            </label>
-            <input type="text" id="first" name="first" 
-                placeholder="Enter your Username" required>
-
-            <label for="password">
-                Password:
-            </label>
-            <input type="password" id="password" name="password" 
-                placeholder="Enter your Password" required>
-
-            <div class="wrap">
-                <button type="submit">
-                    Submit
-                </button>
-            </div>
-        </form>
-        
-        <p>Not registered?
-           <button> <a href="/SignUp.html" style="text-decoration: none;">
-                Create an account
-            </a></button>
-        </p>
-    </div>
+    <script src="/mine.js"></script>
 </body>
 
 </html>

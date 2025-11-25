@@ -1,28 +1,41 @@
+function handleLogin(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('name').value.trim();
+    const password = document.getElementById('password').value;
+
+    if (!username || !password) {
+        alert("Please enter both username and password.");
+        return;
+    }
+
+    console.log("Username:", username);
+    console.log("Password:", password);
+}
 
 
-const handleSignUp = (event) => {
-  event.preventDefault();
-  
-  const formData = new FormData(event.target);
-  const name = formData.get("name");
-  const email = formData.get("email");
-  const password = formData.get("password");
-    
-  console.log(name, email, password);
-  alert("Successfully SignUp")
-};
 
 
-const handleLogin= (event) => {
-  event.preventDefault();
-  
-  const formData = new FormData(event.target);
-  const name = formData.get("name");
-  const password = formData.get("password");
-    
-  console.log(name,password);
-  alert("Successfully SignUp")
-};
+function handleSignUp(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+
+    if (!username || !email || !password) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    console.log("Username:", username);
+    console.log("Email:", email);
+    console.log("Password:", password);
+
+    alert("Registration successful!");
+    document.getElementById('signUpForm').reset();
+}
+
 
 
 
